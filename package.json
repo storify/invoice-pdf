@@ -1,0 +1,34 @@
+{
+  "name": "invoice-pdf",
+  "version": "0.0.1",
+  "description": "Create a stripe invoice pdf from a jade template",
+  "keywords": [
+    "stripe",
+    "invoice",
+    "pdf",
+    "jade",
+    "storify"
+  ],
+  "author": "Philmod <philmod@storify.com>",
+  "homepage": "https://github.com/storify/invoice-pdf",
+  "engines": {
+    "node": ">= v0.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "should": "",
+    "mocha": ""
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "main": "index",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/storify/invoice-pdf.git"
+  },
+  "license": "BSD"
+}
