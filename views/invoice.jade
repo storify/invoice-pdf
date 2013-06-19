@@ -1,0 +1,122 @@
+- var date          = data.date;
+- var transactionId = data.transactionId;
+- var creditCardEnd = data.creditCardEnd;
+- var user          = data.user;
+- var plan          = data.plan || 'Business Plan';
+- var price         = data.price;
+!!! 5
+html
+  head
+    meta(charset="UTF-8")
+    title Welcome to Storify
+    style(type="text/css")
+      @media only screen and (max-device-width: 480px) {
+        div[class="image"] {
+          width: 100%!important;
+        }
+        div[class="content"] {
+          width: 100%!important;
+        }
+        div[class="content_inner"] {
+          padding: 15px 0 0 0!important;
+        }
+      }
+      .logo {
+        background: url('#{webappUrl}/public/img/logo-new-hi.png') no-repeat;
+        height: 94px;
+        overflow: hidden;
+        margin-bottom : 20px;
+      }
+      a {
+        color: #5290e1;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .main {
+        font-family:Helvetica,Arial,sans-serif;
+        color:#666;
+        font-size:16px;
+        padding:24px;
+      }
+      .wrap {
+        width           : 100%;
+        margin          : 40px 0px 150px 0px;
+      }
+      .address {
+        float           : left;
+      }
+      .paid {
+        float           : right;
+        margin-top      : 1em;
+      }
+      ul {
+        padding         : 0;
+      }
+      li {
+        list-style-type : none;
+      }
+      table {
+        margin          : 40px 0px 40px 0px;
+      }
+      .info {
+        clear           : both;
+      }
+      .items {
+        border-collapse :collapse;
+        width           :100%;
+      }
+      .items th, .items td {
+        border          : 1px solid black;
+        padding         : 8px
+      }
+      th {
+        text-align      : left;
+        font-weight     : bolder;
+      }
+      .right {
+        text-align      : right;
+      }
+  body(style="margin:0;padding:0;-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;width:100%!important;")
+    div.main
+      div.logo
+      div.wrap
+        div.address
+          ul
+            li Storify Invoice
+            li 149 9th St., Suite 404
+            li San Francisco, CA 94103
+        div.paid
+          strong PAID
+      div.info
+        ul
+          li 
+            strong Invoice Date:
+            | &nbsp;&nbsp;#{date}
+          li
+            strong Credit Card Transaction ID:
+            | &nbsp;&nbsp;#{transactionId}
+          li
+            strong Create Card ending in:
+            | &nbsp;&nbsp;#{creditCardEnd}
+          li
+            strong Bill to:
+            | &nbsp;&nbsp;#{user.name}
+      table.items
+        tr
+          th Item
+          th.right Amount (in U.S. dollars)
+        tr
+          td #{plan}
+          td.right $ #{price}
+        tr
+          td Payments/credits
+          td.right $ -#{price}
+        tr
+          td 
+            strong Invoice balance
+          td.right 
+            strong $ 0
+      div
+        p 
+          strong Credit card statement
+        p Your credit card will show a transaction from Storify.com

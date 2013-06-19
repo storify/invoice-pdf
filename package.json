@@ -14,7 +14,12 @@
   "engines": {
     "node": ">= v0.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jade": "0.28.2",
+    "phantom" : "git@github.com:sgentle/phantomjs-node.git",
+    "async": "0.2.9",
+    "moment": "2.0.0"
+  },
   "devDependencies": {
     "should": "",
     "mocha": ""
@@ -23,12 +28,8 @@
     "test": "make test"
   },
   "main": "index",
-  "directories": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/storify/invoice-pdf.git"
-  },
-  "license": "BSD"
+  }
 }

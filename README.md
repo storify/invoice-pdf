@@ -4,6 +4,14 @@
 
 ## Installation
 
+  ### Install Phantom
+
+  ### NPM
     $ npm install invoice-pdf
   
 ## Usage
+
+  See tests.
+
+## Run Tests
+		$ make test
