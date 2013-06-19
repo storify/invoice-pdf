@@ -4,9 +4,9 @@
 
 ## Installation
 
-  ### Install Phantom
+### Install Phantom
 
-  ### NPM
+### NPM
     $ npm install invoice-pdf
   
 ## Usage
