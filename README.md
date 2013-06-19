@@ -11,7 +11,40 @@
   
 ## Usage
 
-  See tests.
+```js
+var user = { // coming from Storify database
+		username: 'philmod'
+	, ...
+	, _stripe : {
+			...
+		}
+};
+var options = {};
+var invoice = new Invoice(user, options);
+invoice.create(function(e,path) {
+	// you get the pdf file path
+});
+```
+
+Other usages: 
+ - Render the html
+```js
+invoice.render(function(e,html) {
+
+});
+```
+ - Create PDF from html
+```js
+invoice.jade2pdf(function(e,path) {
+
+});
+```
+ - Delete PDF file
+```js
+invoice.deletePdf(function(e) {
+
+});
+```
 
 ## Run Tests
 		$ make test
