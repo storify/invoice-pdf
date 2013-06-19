@@ -27,19 +27,24 @@ invoice.create(function(e,path) {
 ```
 
 Other usages: 
- - Render the html
+ - Render the html:
+
 ```js
 invoice.render(function(e,html) {
 
 });
 ```
- - Create PDF from html
+
+ - Create PDF from html:
+
 ```js
 invoice.jade2pdf(function(e,path) {
 
 });
 ```
- - Delete PDF file
+
+ - Delete PDF file:
+
 ```js
 invoice.deletePdf(function(e) {
 
