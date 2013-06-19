@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "jade": "0.28.2",
-    "phantom" : "git@github.com:sgentle/phantomjs-node.git",
+    "phantom": "https://github.com/sgentle/phantomjs-node.git",
     "async": "0.2.9",
     "moment": "2.0.0"
   },
@@ -31,5 +31,11 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/storify/invoice-pdf.git"
-  }
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "0c70988cb8e284aeff0ce07402ba5dfd9f6aba75",
+  "directories": {
+    "test": "test"
+  },
+  "license": "BSD"
 }
