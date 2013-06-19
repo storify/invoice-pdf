@@ -51,8 +51,10 @@ describe('Invoice separate methods', function(){
     invoice.jade2pdf(function(e,path) {
       should.equal(e,null);
       should.exist(path);
-      deleteFile(path);
-      done();
+      invoice.deletePdf(function(e) {
+        should.equal(e,null);
+        done();
+      });
     });
   });
 
@@ -70,8 +72,10 @@ describe('Invoice.create', function() {
     invoice.create(function(e,path) {
       should.equal(e,null);
       should.exist(path);
-      deleteFile(path);
-      done();
+      invoice.deletePdf(function(e) {
+        should.equal(e,null);
+        done();
+      });
     });
   });
 

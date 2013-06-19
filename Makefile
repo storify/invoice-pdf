@@ -4,6 +4,7 @@ REPORTER = dot
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha \
 		--reporter $(REPORTER) \
+		--timeout 5000 \
 		$(MOCHA_OPTS)
 
 test-w:
