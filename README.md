@@ -51,5 +51,11 @@ invoice.deletePdf(function(e) {
 });
 ```
 
+ - Pipe PDF file:
+
+```js
+invoice.pipePdf(res);
+```
+
 ## Run Tests
 		$ make test
