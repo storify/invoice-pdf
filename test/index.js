@@ -31,7 +31,7 @@ describe('Invoice separate methods', function(){
 
   var invoice;
 
-  it('should creates the recommendations instance', function(done){
+  it('should creates the invoice instance', function(done){
     var options = {};
     invoice = new Invoice(user, options);
     invoice.should.have.property('data');
@@ -48,6 +48,7 @@ describe('Invoice separate methods', function(){
   });
 
   it('should create pdf from html', function(done){
+    this.timeout(10000);
     invoice.jade2pdf(function(e,path) {
       should.equal(e,null);
       should.exist(path);
@@ -68,7 +69,8 @@ describe('Invoice.create', function() {
     invoice = new Invoice(user, {});
   });
 
-  it('should creates the recommendations instance', function(done){
+  it('should creates the invoice instance', function(done){
+    this.timeout(10000);
     invoice.create(function(e,path) {
       should.equal(e,null);
       should.exist(path);
