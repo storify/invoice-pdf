@@ -18,7 +18,7 @@
     "jade": "0.28.2",
     "phantom": "git://github.com/sgentle/phantomjs-node.git",
     "async": "0.2.9",
-    "moment": "2.0.0",
+    "moment": "2.3.1",
     "portchecker": "0.1.2"
   },
   "devDependencies": {
