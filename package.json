@@ -1,6 +1,6 @@
 {
   "name": "invoice-pdf",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Create a stripe invoice pdf from a jade template",
   "keywords": [
     "stripe",
